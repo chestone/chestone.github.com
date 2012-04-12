@@ -242,6 +242,7 @@ td { vertical-align: top; }
     border: 3px solid #999;
     margin: 0 auto;
     padding: 15px;
+    border-radius: 5px;
 }
 
 a, a:visited {
@@ -260,6 +261,13 @@ body a:hover {
 .cll-profile img {
     width: 200px;
     height: 266px;
+    border-radius: 5px;
+}
+
+.cll-profile img:hover {
+    -webkit-transform:scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: #666 0 5px 10px;
 }
 
 .cll-social {
