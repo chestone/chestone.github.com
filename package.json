@@ -1,0 +1,23 @@
+{
+  "name": "chestone.github.com",
+  "version": "0.0.0",
+  "description": "my personal site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chestone/chestone.github.com.git"
+  },
+  "author": "Cheston Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chestone/chestone.github.com/issues"
+  },
+  "homepage": "https://github.com/chestone/chestone.github.com",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-concat": "^0.4.0"
+  }
+}
