@@ -114,6 +114,10 @@ h3.tenure {
     float: right;
 }
 
+h4 {
+    text-transform: lowercase;
+}
+
 header > div > * {
      display: inline-block;
 }
