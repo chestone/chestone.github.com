@@ -51,9 +51,6 @@ li {
     margin-bottom: 18px;
     font-size: 20px;
     font-weight: 100;
-    /* border-bottom: 1px dotted #000; */
-    /* background-color: #FCFCFC; */
-    /* padding-left: 5px; */
 }
 
 .content {
@@ -100,10 +97,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
     font-style: normal;
     margin-bottom: 5px;
-}
-
-section article {
-    /* padding: 0 18px; */
 }
 
 h3.employer {
