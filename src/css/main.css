@@ -26,13 +26,11 @@ h1, h2, h3, h4, h5 {
     height: 768px; }
     .site .main .siderail {
       display: inline-block;
-      float: left;
-      width: 196px; }
+      width: 300px; }
     .site .main .content {
       display: inline-block;
-      width: auto;
-      float: right;
-      width: 788px; }
+      vertical-align: top;
+      max-width: 650px; }
 
 .group:before {
   content: '';

@@ -18,6 +18,9 @@
   "homepage": "https://github.com/chestone/chestone.github.com",
   "devDependencies": {
     "grunt": "^0.4.4",
-    "grunt-contrib-concat": "^0.4.0"
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

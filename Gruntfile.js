@@ -9,10 +9,18 @@ module.exports = function(grunt) {
                 src: ['src/css/reset.css', 'src/css/syntax.css', 'src/css/main.css'],
                 dest: 'dest/css/built.css'
             }
+        },
+        sass : {
+            dist: {
+                files: {
+                    'src/css/main.css' : 'src/css/main.scss'
+                }
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('default', ['concat']);
+    grunt.registerTask('default', ['sass', 'concat']);
 };
