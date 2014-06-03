@@ -1,8 +1,16 @@
+a {
+  color: #0a9e01;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
 body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
   background-color: #fbfbfb;
-  color: black;
+  color: #222222;
   line-height: 1.5em; }
 
 h1, h2, h3, h4, h5 {
@@ -15,12 +23,18 @@ h1, h2, h3, h4, h5 {
   background-color: white; }
   .site header {
     height: 80px;
-    background-color: #EFEFEF;
-    padding: 0 20px; }
+    color: white;
+    background-color: #0a9e01;
+    padding: 0 20px;
+    padding-top: 18px; }
+    .site header h1, .site header h3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100; }
     .site header h1 {
-      display: inline-block; }
-    .site header div {
-      display: inline-block; }
+      font-size: 32px; }
+    .site header h3 {
+      margin-top: 10px;
+      font-size: 16px; }
   .site .main {
     padding: 0 20px;
     height: 768px; }

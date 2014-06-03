@@ -16,11 +16,39 @@ module.exports = function(grunt) {
                     'src/css/main.css' : 'src/css/main.scss'
                 }
             }
+        },
+        uglify: {
+            dist: {
+                options: {
+                  banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+                },
+                files: {
+                    'dest/script.min.js' : ['src/js/script.js']
+                }
+            }
+        },
+        watch : {
+            files: ['src/css/*.scss', 'src/css/*.css'],
+            tasks: ['sass', 'concat'],
+            options: {}
+        },
+        jshint: {
+            files: ['Gruntfile.js', 'src/js/*.js'],
+            options: {
+                globals: {
+                    console: true
+                }
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['sass', 'concat']);
+    grunt.registerTask('lint', ['jshint']);
+    grunt.registerTask('default', ['sass', 'concat', 'uglify']);
 };
