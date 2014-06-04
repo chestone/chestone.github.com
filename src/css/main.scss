@@ -2,15 +2,18 @@ $primary-color: #000;
 $font-family: Helvetica, Arial, sans-serif;
 $bg-color: #FBFBFB;
 $font-color: rgb(34, 34, 34);
-
 $link-color: rgb(10,158,1);
 
 a {
-    color: $link-color;
+    color: $font-color;
     text-decoration: none;
+    transition: color 0.25s ease;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+    color: $link-color;
+    text-decoration: underline; 
+}
 
 body {
     font-size: 16px;
@@ -25,6 +28,10 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
+.headline {
+    font-weight: 100;
+}
+
 .site {
 
     width: 1024px;
@@ -33,11 +40,11 @@ h1, h2, h3, h4, h5 {
     background-color: white;
 
     header {
-        height: 80px;
+        height: 100px;
         color: white;
         background-color: rgb(10,158,1);
         padding: 0 20px;
-        padding-top: 18px;
+        padding-top: 30px;
 
         h1, h3 {
             font-family: 'Roboto', sans-serif;
@@ -55,7 +62,7 @@ h1, h2, h3, h4, h5 {
     }
 
     nav {
-        background-color: #EFEFEF;
+        background-color: #FBFBFB;
         padding: 10px 0;
     }
 
@@ -71,7 +78,6 @@ h1, h2, h3, h4, h5 {
         .siderail {
             display: inline-block;
             width: 300px;
-            border-right: 1px dotted black;
 
             .section-bio {
                 width: 80%;

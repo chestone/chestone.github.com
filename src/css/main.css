@@ -1,8 +1,10 @@
 a {
-  color: #0a9e01;
-  text-decoration: none; }
+  color: #222222;
+  text-decoration: none;
+  transition: color 0.25s ease; }
 
 a:hover {
+  color: #0a9e01;
   text-decoration: underline; }
 
 body {
@@ -16,17 +18,20 @@ body {
 h1, h2, h3, h4, h5 {
   font-weight: bold; }
 
+.headline {
+  font-weight: 100; }
+
 .site {
   width: 1024px;
   height: 100%;
   margin: 0 auto;
   background-color: white; }
   .site header {
-    height: 80px;
+    height: 100px;
     color: white;
     background-color: #0a9e01;
     padding: 0 20px;
-    padding-top: 18px; }
+    padding-top: 30px; }
     .site header h1, .site header h3 {
       font-family: 'Roboto', sans-serif;
       font-weight: 100; }
@@ -36,7 +41,7 @@ h1, h2, h3, h4, h5 {
       margin-top: 10px;
       font-size: 16px; }
   .site nav {
-    background-color: #EFEFEF;
+    background-color: #FBFBFB;
     padding: 10px 0; }
   .site nav li {
     display: inline-block;
@@ -47,8 +52,7 @@ h1, h2, h3, h4, h5 {
     height: 768px; }
     .site .main .siderail {
       display: inline-block;
-      width: 300px;
-      border-right: 1px dotted black; }
+      width: 300px; }
       .site .main .siderail .section-bio {
         width: 80%;
         white-space: pre-line; }
