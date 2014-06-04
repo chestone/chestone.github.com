@@ -1,4 +1,4 @@
-/*! chestone.github.com 2014-06-02 */
+/*! chestone.github.com 2014-06-04 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,12 +149,23 @@ h1, h2, h3, h4, h5 {
     .site header h3 {
       margin-top: 10px;
       font-size: 16px; }
+  .site nav {
+    background-color: #EFEFEF;
+    padding: 10px 0; }
+  .site nav li {
+    display: inline-block;
+    margin-left: 25px; }
   .site .main {
+    margin-top: 25px;
     padding: 0 20px;
     height: 768px; }
     .site .main .siderail {
       display: inline-block;
-      width: 300px; }
+      width: 300px;
+      border-right: 1px dotted black; }
+      .site .main .siderail .section-bio {
+        width: 80%;
+        white-space: pre-line; }
     .site .main .content {
       display: inline-block;
       vertical-align: top;

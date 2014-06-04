@@ -54,12 +54,29 @@ h1, h2, h3, h4, h5 {
         }
     }
 
+    nav {
+        background-color: #EFEFEF;
+        padding: 10px 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
     .main {
+        margin-top: 25px;
         padding: 0 20px;
         height: 768px;
         .siderail {
             display: inline-block;
             width: 300px;
+            border-right: 1px dotted black;
+
+            .section-bio {
+                width: 80%;
+                white-space: pre-line;
+            }
         }
 
         .content {
