@@ -1,5 +1,6 @@
 $primary-color: #000;
 $font-family: Helvetica, Arial, sans-serif;
+$roboto : 'Roboto', sans-serif;
 $bg-color: #FBFBFB;
 $font-color: rgb(34, 34, 34);
 $link-color: rgb(10,158,1);
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5 {
         padding-top: 30px;
 
         h1, h3 {
-            font-family: 'Roboto', sans-serif;
+            font-family: $roboto;
             font-weight: 100;
         }
 
@@ -89,6 +90,30 @@ h1, h2, h3, h4, h5 {
             display: inline-block;
             vertical-align: top;
             max-width: 650px;
+
+            .postTitle {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            article.pagination {
+                border-top: 1px dashed grey;
+                text-align: center;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        font-weight: 100;
+        font-family: $roboto;
+
+        h4 {
+            border-top: 1px dashed grey;
+            margin: 0 30px;
+            padding: 15px 0;
         }
     }
 }
