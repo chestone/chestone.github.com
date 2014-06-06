@@ -4,8 +4,7 @@ a {
   transition: color 0.25s ease; }
 
 a:hover {
-  color: #0a9e01;
-  text-decoration: underline; }
+  color: #0a9e01; }
 
 body {
   font-size: 16px;
