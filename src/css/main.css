@@ -30,7 +30,8 @@ h1, h2, h3, h4, h5 {
     color: white;
     background-color: #0a9e01;
     padding: 0 20px;
-    padding-top: 30px; }
+    padding-top: 30px;
+    box-shadow: inset 0 -4px 6px -6px black; }
     .site header h1, .site header h3 {
       font-family: "Roboto", sans-serif;
       font-weight: 100; }
@@ -41,7 +42,8 @@ h1, h2, h3, h4, h5 {
       font-size: 16px; }
   .site nav {
     background-color: #FBFBFB;
-    padding: 10px 0; }
+    padding: 10px 0;
+    box-shadow: inset 0 -4px 6px -6px black; }
   .site nav li {
     display: inline-block;
     margin-left: 25px; }
