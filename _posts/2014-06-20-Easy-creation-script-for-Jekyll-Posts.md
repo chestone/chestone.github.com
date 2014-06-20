@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Easy creation script for Jekyll Posts"
+categories: jekyll shell
+---
+
+Since I have started using Jekyll for blog like sites I was initially frustrated in all of the boilerplate that had to be written in simple post creation. So I wrote a little script to help generate the basic Jekyll boilerplate front-matter.
+
+```bash
 #!/bin/sh
 
 echo "What would you like the title of your post to be?"
@@ -26,3 +35,5 @@ categories: $categories
 EOF
 
 echo "Post: $title created."
+```
+I feel like this sort of thing really belongs in Jekyll itself since it is all boilerplate for posts, but until then this works. Enjoy.

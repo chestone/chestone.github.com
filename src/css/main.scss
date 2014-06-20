@@ -2,6 +2,7 @@ $primary-color: #000;
 $font-family: Helvetica, Arial, sans-serif;
 $roboto : 'Roboto', sans-serif;
 $bg-color: #FBFBFB;
+$seperator-color: rgb(239, 239, 239);
 $font-color: rgb(34, 34, 34);
 $link-color: rgb(10,158,1);
 $box-shadow: inset 0 -4px 6px -6px black;
@@ -78,7 +79,6 @@ h1, h2, h3, h4, h5 {
     .main {
         margin-top: 25px;
         padding: 0 20px;
-        height: 768px;
         .siderail {
             display: inline-block;
             width: 300px;
@@ -94,9 +94,19 @@ h1, h2, h3, h4, h5 {
             vertical-align: top;
             max-width: 650px;
 
-            .postTitle {
-                font-size: 18px;
-                font-weight: 500;
+            .post {
+                border-bottom: 1px dashed grey;
+                margin-bottom: 25px;
+                padding-bottom: 25px;
+
+                .postTitle {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            .post:last-of-type {
+              border: none;
             }
 
             article.pagination {

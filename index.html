@@ -5,16 +5,18 @@ title: 'My Internet Weblog'
 
 <section class="home">
     {% for post in paginator.posts %}
-        <h1 class="postTitle"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p>
-            <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        </p>
-        <article class="content">
-            {{ post.content }}
+        <article class="post">
+          <h1 class="postTitle"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <p>
+              <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+          </p>
+          <div class="postContent">
+              {{ post.content}}
+          </div>
         </article>
     {% endfor %}
 
-    <article class="pagination">
+    <section class="pagination">
         {% if paginator.previous_page %}
             <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
         {% else %}
@@ -26,5 +28,5 @@ title: 'My Internet Weblog'
         {% else %}
             <span class="next">Next</span>
         {% endif %}
-    </article>
+    </section>
 </section>
