@@ -1,4 +1,4 @@
-/*! chestone.github.com 2014-06-20 */
+/*! chestone.github.com 2014-07-03 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,6 +149,14 @@ body {
   background-color: #fbfbfb;
   color: #222222;
   line-height: 1.5em; }
+
+::selection {
+  color: white;
+  background: #0a9e01; }
+
+::-moz-selection {
+  color: white;
+  background: #0a9e01; }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold; }

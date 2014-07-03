@@ -6,6 +6,7 @@ $seperator-color: rgb(239, 239, 239);
 $font-color: rgb(34, 34, 34);
 $link-color: rgb(10,158,1);
 $box-shadow: inset 0 -4px 6px -6px black;
+$hero-green: rgb(10, 158, 1);
 
 
 a {
@@ -27,6 +28,16 @@ body {
     line-height: 1.5em;
 }
 
+::selection {
+    color: white;
+    background: $hero-green;
+}
+
+::-moz-selection {
+    color: white;
+    background: $hero-green;
+}
+
 h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
@@ -45,7 +56,7 @@ h1, h2, h3, h4, h5 {
     header {
         height: 100px;
         color: white;
-        background-color: rgb(10,158,1);
+        background-color: $hero-green;
         padding: 0 20px;
         padding-top: 30px;
         box-shadow: $box-shadow;
