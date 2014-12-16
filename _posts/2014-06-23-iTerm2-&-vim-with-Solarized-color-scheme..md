@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "iTerm2 & vim with Solarized color scheme."
-categories: iterm2 vim solarized
+title: "iTerm2 & vim with Solarized color scheme"
+category: tech
+tags: iterm2 vim solarized
 ---
 
 So I ran into some weird issues with background color bleed when using iTerm2 & vim on OSX. So I thought I’d write my solution up since I found a lot of incorrect information out there.

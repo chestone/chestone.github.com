@@ -19,6 +19,18 @@ a:hover {
     color: $link-color;
 }
 
+header {
+  .page-title {
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+
 body {
     font-size: 16px;
     font-family: $font-family;
@@ -26,6 +38,16 @@ body {
     background-color: $bg-color;
     color: $font-color;
     line-height: 1.5em;
+
+    a {
+        color: $font-color;
+        text-decoration: none;
+        transition: color 0.25s ease;
+    }
+
+    a:hover {
+        color: $link-color;
+    }
 }
 
 ::selection {

@@ -1,4 +1,4 @@
-/*! chestone.github.com 2014-12-15 */
+/*! chestone.github.com 2014-12-16 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +142,11 @@ a {
 a:hover {
   color: #0a9e01; }
 
+header .page-title a {
+  color: #fff; }
+header .page-title a:hover {
+  color: #fff; }
+
 body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
@@ -149,6 +154,12 @@ body {
   background-color: #FBFBFB;
   color: #222222;
   line-height: 1.5em; }
+  body a {
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.25s ease; }
+  body a:hover {
+    color: #0a9e01; }
 
 ::selection {
   color: white;

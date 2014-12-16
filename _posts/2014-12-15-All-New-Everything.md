@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "All New Everything"
-categories: life jobs
+category: life
+tags: life jobs optimizely engineering uiengineering
 ---
 
 ![Optimizely](/src/img/optimizely.png)
