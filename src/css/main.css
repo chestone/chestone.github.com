@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
-  background-color: #fbfbfb;
+  background-color: #FBFBFB;
   color: #222222;
   line-height: 1.5em; }
 
@@ -83,7 +83,13 @@ h1, h2, h3, h4, h5 {
           clear: right; }
         .site .main .content .post .postContent {
           margin-top: 15px;
-          padding: 0 10px; }
+          padding: 0 10px;
+          line-height: 1.5; }
+          .site .main .content .post .postContent img {
+            margin-top: 15px;
+            margin-bottom: 15px; }
+          .site .main .content .post .postContent p {
+            margin-bottom: 15px; }
       .site .main .content .post:last-of-type {
         border: none; }
       .site .main .content .pagination {
@@ -107,3 +113,5 @@ h1, h2, h3, h4, h5 {
 
 .group:after {
   clear: both; }
+
+/*# sourceMappingURL=main.css.map */

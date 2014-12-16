@@ -126,6 +126,16 @@ h1, h2, h3, h4, h5 {
                 .postContent {
                     margin-top: 15px;
                     padding: 0 10px;
+                    line-height: 1.5;
+
+                    img {
+                      margin-top: 15px;
+                      margin-bottom: 15px;
+                    }
+
+                    p {
+                      margin-bottom: 15px;
+                    }
                 }
             }
 
