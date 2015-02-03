@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   color: #222222;
   line-height: 1.5em; }
   body a {
@@ -125,4 +125,5 @@ h1, h2, h3, h4, h5 {
 .group:after {
   clear: both; }
 
-/*# sourceMappingURL=main.css.map */
+img[alt=MacvimYADR] {
+  width: 100%; }

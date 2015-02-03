@@ -1,6 +1,6 @@
 name: Cheston Lee's Internet Website
 markdown: redcarpet
-pygments: true
+highlight: true
 
 paginate: 5
 paginate_path: "page:num"
