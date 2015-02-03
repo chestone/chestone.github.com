@@ -125,5 +125,8 @@ h1, h2, h3, h4, h5 {
 .group:after {
   clear: both; }
 
+.highlight {
+  overflow: auto; }
+
 img[alt=MacvimYADR] {
   width: 100%; }
