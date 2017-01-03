@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
-  background-color: #fbfbfb;
+  background-color: #FBFBFB;
   color: #222222;
   line-height: 1.5em; }
   body a {
@@ -130,3 +130,5 @@ h1, h2, h3, h4, h5 {
 
 img[alt=MacvimYADR] {
   width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
