@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700,500);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,,500);
 
 /* flexbox things */
 .flexColumn {
@@ -19,7 +19,7 @@
 body {
   background-color: #FBFBFB;
   font: 16px Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   margin: 0 0 1em 0;
   line-height: 1.5;
 }
@@ -57,14 +57,9 @@ article {
 }
 
 .headline {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 100;
   text-transform: lowercase;
-}
-
-.headerContainer .name {
-  font-size: 32px;
-  font-weight: 100;
 }
 
 .headerContainer .info a {
@@ -112,12 +107,14 @@ and (max-width: 1024px) {
   }
 
   .headline {
-    font-size: 32px;
+    font-size: 64px;
     font-weight: 100;
     margin-bottom: 4%;
   }
 
   .headerContainer {
+    font-size: 64px;
+    font-weight: 400;
     padding: 5%;
   }
 
@@ -143,9 +140,9 @@ and (min-width: 1024px) {
   }
 
   .headerContainer .name {
-      font-size: 32px;
-      font-weight: 100;
-      margin-top: 46px;
+    font-size: 32px;
+    font-weight: 100;
+    margin-top: 46px;
   }
 
   .content {
