@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,,500);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
 
 /* flexbox things */
 .flexColumn {
@@ -113,9 +113,14 @@ and (max-width: 1024px) {
   }
 
   .headerContainer {
-    font-size: 64px;
-    font-weight: 400;
+    font-size: 42px;
+    font-weight: 300;
     padding: 5%;
+  }
+
+  .headerContainer .name {
+    font-size: 64px;
+    font-weight: 300;
   }
 
   .content {
@@ -136,6 +141,7 @@ and (min-width: 1024px) {
 
   .headerContainer {
     max-width: 1024px;
+    font-weight: 100;
     margin: auto;
   }
 
@@ -146,6 +152,7 @@ and (min-width: 1024px) {
   }
 
   .content {
+    font-weight: 100;
     max-width: 1024px;
     margin: auto;
     padding: 35px;
