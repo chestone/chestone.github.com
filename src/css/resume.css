@@ -89,7 +89,8 @@ article {
 
 /* Mobile Phone Specific Styles*/
 @media only screen
-and (max-width: 1024px) {
+/*and (max-width: 1024px) {*/
+and (max-device-width: 1024px) {
   section {
     margin-bottom: 2%;
   }
