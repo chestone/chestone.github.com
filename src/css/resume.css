@@ -1,144 +1,176 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700,500);
 
+/* flexbox things */
+.flexColumn {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 body {
-    background-color: #FBFBFB;
-    font: 16px Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    margin: 0 0 1em 0;
-    line-height: 1.5;
-}
-
-.headerContainer {
-    max-width: 1024px;
-    margin: auto;
-}
-
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.general .bio {
-    float: left;
-    display: inline-block;
-    width: 50%;
-}
-.general .skills {
-    float: right;
-    display: inline-block;
-    width: 30%;
-    background-color: #FBFBFB;
-    padding: 15px;
-}
-
-li:before {
-    content: '-';
-    margin-left: -20px;
-    padding: 0 8px;
-}
-
-li {
-    margin-bottom: 5px;
-    margin-left: 15px;
-}
-
-.headline {
-    margin-bottom: 18px;
-    font-size: 20px;
-    font-weight: 100;
-}
-
-.content {
-    background-color: #FFF;
-    max-width: 1024px;
-    margin: auto;
-    padding: 35px;
-}
-
-header .name {
-    font-weight: 100;
-    margin-top: 46px;
-}
-
-.info li {
-    margin: 0;
-    line-height: 1.2em;
-}
-
-.info li:before {
-    content: '';
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(10,158,1);
-    color: white;
+  background-color: #FBFBFB;
+  font: 16px Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0 0 1em 0;
+  line-height: 1.5;
 }
 
 a {
-    color: rgb(10,158,1);
-    text-decoration: none;
+  color: rgb(10,158,1);
+  text-decoration: none;
 }
 
-.info a {
-    color: white;
+header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  background-color: rgb(10,158,1);
+  color: white;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin-bottom: 5px;
-}
-
-h3.employer {
-    float: left;
-}
-
-h3.tenure {
-    float: right;
-}
-
-h4 {
-    text-transform: lowercase;
-}
-
-header > div > * {
-     display: inline-block;
-}
-
-.name {
-    font-weight: lighter;
-    font-size: 32px;
-    float: left;
-}
-
-.info {
-    margin-top: 30px;
-    text-align: right;
-    float: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 5px;
 }
 
 section {
-    padding-left: 18px;
+  margin-bottom: 2%;
 }
 
 article {
+  margin-bottom: 5%;
+}
+
+.breathe {
+  margin-bottom: 2%;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.headerContainer .name {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.headerContainer .info a {
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+  background: #FFF;
+}
+
+.content .experienceList li {
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+
+.content .experienceList li:before {
+  content: ' - ';
+}
+
+.bio-objective,
+.education-skills {
+  background-color: #FBFBFB;
+  padding: 15px;
+  padding-top: 5px;
+}
+
+/* Mobile Phone Specific Styles*/
+@media only screen
+and (max-width: 1024px) {
+  section {
+    margin-bottom: 2%;
+  }
+
+  article {
+    margin-bottom: 5%;
+  }
+
+  .flexRow {
+    display: block;
+  }
+
+  .group {
+    margin-bottom: 2%;
+  }
+
+  .headline {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 4%;
+  }
+
+  .headerContainer {
+    padding: 5%;
+  }
+
+  .content {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 1%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 35px;
+  }
+}
+/* Tablet(iPad) & Desktop Specific Styles*/
+@media only screen
+and (min-width: 1024px) {
+  .headline {
     margin-bottom: 18px;
-}
+  }
 
-article p {
-    margin: 10px 0;
-}
+  .headerContainer {
+    max-width: 1024px;
+    margin: auto;
+  }
 
-article ul {
-    margin-left: 10px;
+  .headerContainer .name {
+      font-size: 32px;
+      font-weight: 100;
+      margin-top: 46px;
+  }
+
+  .content {
+    max-width: 1024px;
+    margin: auto;
+    padding: 35px;
+  }
+
+  .info {
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  .info li {
+      margin: 0;
+      line-height: 1.2em;
+  }
+
+  .bio-intro,
+  .education-college {
+    width: 50%;
+  }
+
+  .bio-objective,
+  .education-skills {
+    width: 30%;
+  }
 }

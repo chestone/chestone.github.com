@@ -3,135 +3,134 @@
         <title>Cheston Lee's Resume</title>
         <link rel="stylesheet" href="src/css/reset.css">
         <link rel="stylesheet" href="src/css/resume.css">
+        <meta name="format-detection" content="telephone=no">
     </head>
     <body>
         <header>
-            <div class="headerContainer">
-                <h1 class="name">Cheston Lee</h1>
-            <ul class="info">
-              <li>815.246.2797</li>
+            <div class="headerContainer flexRow">
+              <h1 class="name">Cheston Lee</h1>
+              <ul class="info">
+                <li>
+                  <a href="tel:+1-815-246-2797">1.815.246.2797</a>
+                </li>
                 <li><a href="mailto:chestonlloyd@gmail.com">chestonlloyd@gmail.com</a></li>
                 <li>Brooklyn, NY</li>
-            </ul>
+              </ul>
             </div>
         </header>
         <div class="content">
-            <section class="group general">
-                <article class="bio">
-                    <h4 class="headline">Who</h4>
-                    <p>I have spent the last year managing high performing teams on the Hillary for America Presidential Campaign. I am interested in using my skills in technical management to work with teams in order to realize their potential.</p>
-                    <h4 class="headline">Objective</h4>
-                    <p>I am seeking an engineering leadership position in the New York City area.</p>
+            <section class="flexRow group bio">
+                <article class="bio-intro">
+                  <h4 class="headline">Intro</h4>
+                  <p>I have spent the last year managing high performing teams on the Hillary for America Presidential Campaign. I am interested in using my skills in technical management to work with teams in order to realize their potential.</p>
                 </article>
-                <article class="skills">
-                        <h4 class="headline">Skills</h4>
-                        <ul>
-                            <li>HTML, CSS/SASS, Nunjucks/Jade/Markdown</li>
-                            <li>Javascript, PHP</li>
-                            <li>React, NuclearJS, VueJS, HighCharts, jQuery, YUI, Node.js</li>
-                            <li>Mocha, Webdriver/Selenium</li>
-                            <li>AWS Lambda, PhantomJS, Jenkins/Travis, Git, vim</li>
-                            <li>MySQL, MongoDB</li>
-                        </ul>
+                <article class="bio-objective">
+                  <h4 class="headline">Objective</h4>
+                  <p>I am seeking an engineering leadership position in the New York City area.</p>
                 </article>
             </section>
             <section class="experience">
-                <h4 class="headline">Where / What / When</h4>
+                <h4 class="headline breathe">Where / What / When</h4>
                 <article>
-                    <div class="group">
-                        <h3 class="employer">Hillary for America/ Engineering Manager, Lead Software Engineer</h3>
+                    <div class="flexRow group">
+                        <h3 class="employer">Hillary for America / Engineering Manager</h3>
                         <h3 class="tenure">Brooklyn, NY 09/2015 - 11/2016</h3>
                     </div>
-                    <p>Balanced a dual role as people manager and technical leader to run the Fundraising team at the campaign. Composed of teams responsible for online donations, data collection, e-commerce and internal tooling.</p>
-                    <ul>
-                      <li>Grew the Fundraising team from two Engineers to nine with two Product Managers in a year.</li>
+                    <p class="breathe">Balanced a dual role as people manager and technical leader to run the Fundraising team at the campaign. Composed of teams responsible for online donations, data collection, e-commerce and internal tooling.</p>
+                    <ul class="experienceList">
+                      <li>Grew the Fundraising team from two Engineers to nine in a year.</li>
                       <li>Led the team to take on responsibility for over a dozen major project responsibilities for internal stakeholders.</li>
                       <li>Acted as technical leader to run key planning and prioritiziation with product stakeholders.</li>
                       <li>Worked with the team to manage the development planning process, establishment of technical guidelines and release processes to meet deadlines, maintain code quality and ensure product reliability.</li>
-                      <li>Conducted performance reviews for direct reports in order to give actionable feedback and title adjustments.</li>
+                      <li>Conducted performance reviews for direct reports to give actionable feedback and title adjustments.</li>
                       <li>Developed API driven front-ends in React/Flux to create online donation and sign up forms publishable by internal stakeholders.</li>
                     </ul>
                 </article>
                 <article>
-                    <div class="group">
+                    <div class="flexRow group">
                         <h3 class="employer">Optimizely / Senior UI Engineer</h3>
                         <h3 class="tenure">San Francsico, CA, 05/2014 - 09/2015</h3>
                     </div>
-                    <p>Worked on the Predictive Analytics and Web Platform teams to develop interactive data visualizations for Optimizely's Personalization product.</p>
-                    <ul>
-                      <li>Developed working prototypes to visualize results from customer A/B tests and personalized experiences that cut across large data sets to help customers see actionable results.</li>
+                    <p class="breathe">Worked on the Predictive Analytics and Web Platform teams to develop interactive data visualizations for Optimizely's Personalization product.</p>
+                    <ul class="experienceList">
+                      <li>Developed working prototypes to visualize results from customer A/B tests and personalized experiences that cut across large data sets to help customers get actionable results.</li>
                       <li>Wrote componentized and tested interactive dashboards using VueJS + NuclearJS to manage experiments and personalized experiences.</li>
                       <li>Led the effort to benchmark and track front-end performance of multiple applications including integration of new tooling and negotiating with vendors.</li>
                       <li>Built a Javascript(ES6) component library as part of Optimizely's style library to provide out of the box interactive components for use across products.</li>
                     </ul>
                 </article>
                 <article>
-                    <div class="group">
+                    <div class="flexRow group">
                         <h3 class="employer">SmugMug.com / Sorcerer (Software Engineer)</h3>
                         <h3 class="tenure">Mountain View, CA, 08/2010 - 04/2014</h3>
                     </div>
-                    <p>I began with a front-end role and moved across the technical stack, implementing everything from infrastructure to product and API features.</p>
-                    <ul>
-                        <li>Wrote user-facing documentation, gave bi-weekly lectures, and filled in gaps in the internal API before release.</li>
-                        <li>Developed and tested a Node.js proxy that performed server-side rendering of our rich client application using PhantomJS.</li>
-                        <li>Designed and completely rewrote our mobile photo gallery experience using jQuery Mobile.</li>
-                        <li>Wrote marketing material on short schedule for large product launches.</li>
-                        <li>Led a team to integrate third-party tools into the site, which required data sharing and a major front-end refactor.</li>
-                        <li>Built a new interface for browsing greeting cards available from photographers.</li>
+                    <p class="breathe">I began with a front-end role and moved across the technical stack, implementing everything from infrastructure to product and API features.</p>
+                    <ul class="experienceList">
+                      <li>Wrote user-facing documentation, gave bi-weekly lectures, and filled in gaps in the internal API before release.</li>
+                      <li>Developed and tested a Node.js proxy that performed server-side rendering of our rich client application using PhantomJS.</li>
+                      <li>Designed and completely rewrote our mobile photo gallery experience using jQuery Mobile.</li>
+                      <li>Led a team to integrate third-party tools into the site, which required data sharing and a major front-end refactor.</li>
                     </ul>
                 </article>
                 <article>
-                    <div class="group">
+                    <div class="flexRow group">
                         <h3 class="employer">Genius.com / Software Engineer</h3>
                         <h3 class="tenure">San Mateo, CA, 04/2008 - 05/2010</h3>
                     </div>
-                    <p>I developed features for the core product, as well as the architecture for our custom PHP framework.</p>
-                    <ul>
-                        <li>Designed and developed a MVC page development framework using PHP, ExtJS, XML, and JSON.</li>
-                        <li>Worked with QA to develop automated functional tests using Selenium RC and PHPUnit.</li>
-                        <li>Participated in the development of complex, multi-tenant systems to help users automate common tasks and create behavior-based workflows.</li>
-                        <li>Played a pivotal role in designing a web security test plan and creating a set of secure programming guidelines.</li>
-                        <li>Served as Scrum Master, where I worked to worked to tailor Agile/Lean methodologies to the needs of our team.</li>
+                    <p class="breathe">I developed features for the core product -- a marketing autiomation tool, as well as the architecture for our custom PHP framework.</p>
+                    <ul class="experienceList">
+                      <li>Designed and developed a MVC page development framework using PHP, ExtJS, XML, and JSON.</li>
+                      <li>Played a pivotal role in designing a web security test plan and creating a set of secure programming guidelines.</li>
+                      <li>Served as Scrum Master, where I worked to worked to tailor Agile/Lean methodologies to the needs of our team.</li>
                     </ul>
                 </article>
                 <article>
-                    <div class="group">
+                    <div class="flexRow group">
                         <h3 class="employer">C-Print / Software Developer</h3>
                         <h3 class="tenure">Rochester, NY, 06/2004 - 12/2006</h3>
                     </div>
-                    <p>As a college intern, I developed a client/server desktop application in Java.</p>
-                    <ul>
-                        <li>Oversaw design, development, and testing of a major release on a team of four developers.</li>
-                        <li>Implemented new product features and optimized database interactions.</li>
+                    <p class="breathe">As a college intern, I developed a client/server application in Java to assist deaf & hard of hearing students with classroom interactions.</p>
+                    <ul class="experienceList">
+                      <li>Oversaw design, development, and testing of a major release on a team of four developers.</li>
                     </ul>
                 </article>
             </section>
             <section class="projects">
                 <h4 class="headline">Projects</h4>
                 <article>
-                    <h3>HackFortress</h3>
-                    <p>HackFortress is a competition that combines gaming and computer security, with each team having a group of gamers and a group of hackers. The gamers play Team Fortress 2 while the hackers try to solve security challenges across a variety of fields, include forensics, networking, encryption and web. Completion of goals in the hacking challenge unlock abilities in the game, and vice versa. HackFortress runs annually at the <a href="http://www.shmoocon.org/">Shmoocon</a> security conference and at <a href="http://defcon.org/">DEFCON</a>.</p>
-                    <ul>
-                        <li>Led the development of web application security challenges in varying languages and frameworks, including Ruby/Sinatra and Node.js/Express.</li>
-                        <li>Common scenarios involve client/server vulnerabilities, such as CSRF, XSS, and unvalidated input injections or evasions.</li>
-                        <li>Built a reusable style & component library for use in web puzzles.</li>
-                        <li>Assisted in organizing and running the event at DEFCON.</li>
+                    <h3>HackFortress / <a href="http://www.shmoocon.org/">Shmoocon</a> & <a href="http://defcon.org/">DEFCON</a></h3>
+                    <p class="breathe">HackFortress is a competition that combines gaming and computer security. A tournament style event with two teams consisting of a group of gamers playing TeamFortress 2 and a group of hackers solving security challenges across a variety of fields, including forensics, networking, encryption and web security.</p>
+                    <ul class="experienceList">
+                      <li>Led the development of web application security challenges in varying languages and frameworks, including Ruby/Sinatra and Node.js/Express.</li>
+                      <li>Common scenarios involve client/server vulnerabilities, such as CSRF, XSS, and unvalidated input injections or evasions.</li>
+                      <li>Built a reusable style & component library for use in web puzzles.</li>
                     </ul>
                 </article>
             </section>
-            <section class="education">
+            <section class="education flexRow">
+              <article class="education-college">
                 <h4 class="headline">Education</h4>
-                <article>
-                    <div class="group">
-                        <h3 class="employer">Rochester Institute of Technology</h3>
-                        <h3 class="tenure">Rochester, NY 2008</h3>
-                    </div>
-                    <p>Graduated with a Bachelor of Science in Information Technology with concentrations in Computer Science and Application Development with a minor in Political Science.</p>
-                    <ul>
-                        <li>Executive Board Member of Computer Science House.</li>
-                        <li>Member of the Dean's List.</li>
-                    </ul>
-                </article>
+                  <div class="flexRow group">
+                      <h3 class="employer">Rochester Institute of Technology</h3>
+                      <h3 class="tenure">Rochester, NY 2008</h3>
+                  </div>
+                  <p class="breathe">Graduated with a Bachelor of Science in Information Technology with concentrations in Computer Science and Application Development with a minor in Political Science.</p>
+                  <ul class="experienceList">
+                      <li>Executive Board Member of Computer Science House.</li>
+                      <li>Member of the Dean's List.</li>
+                  </ul>
+              </article>
+              <article class="education-skills skills">
+                <h4 class="headline">Skills</h4>
+                <ul class="experienceList">
+                    <li>HTML, CSS/SASS, Markdown</li>
+                    <li>Javascript, PHP</li>
+                    <li>React, VueJS, NuclearJS, Node.js</li>
+                    <li>Mocha, Webdriver/Selenium</li>
+                    <li>AWS Lambda, PhantomJS, TravisCI, git, vim</li>
+                    <li>MySQL, MongoDB</li>
+                </ul>
+              </article>
             </section>
         </div>
     </body>
