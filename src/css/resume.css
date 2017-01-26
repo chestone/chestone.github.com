@@ -140,6 +140,10 @@ and (max-device-width: 1024px) {
 /* Tablet(iPad) & Desktop Specific Styles*/
 @media only screen
 and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
   .headline {
     margin-bottom: 18px;
   }
